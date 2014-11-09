@@ -1,0 +1,66 @@
+*{
+	background-color: teal;
+}
+
+h1{
+	font-family: cursive;
+	color: white;
+	font-size: 45px;
+	top: 18px;
+	left: 40px;
+	position: absolute;
+
+}
+
+td{
+	padding: 10px 15px 10px 15px;
+	font-family: cursive;
+	color: white;
+	font-size: 18px;
+
+}
+
+table{
+	clear: both;
+}
+
+.nav_bar{
+border: 2px solid white;
+margin: 10px 10px 60px;
+padding: 10px 10px 10px 10px;
+position: fixed;
+right: 15px;
+left: 650px;
+z-index: 1;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: plum;
+}
+
+
+.background_img{
+position: absolute;
+margin-top: 120px;
+margin-left: 20px;
+width: 95%;
+height: 80%;
+border: 1px solid white;
+
+}
+
+
+.cover_img{
+position: relative;
+top: 350px;
+left: 35px;
+height: 50%;
+width: 35%;
+border: 1px solid white;
+}
+
