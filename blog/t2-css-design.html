@@ -10,7 +10,7 @@
 <div>
   <div class="first">
     <h1>Melissa Wimberly</h1>
-    <p>A Beginner's Blog For Beginners</p>
+    <p id="cursive">A Beginner's Blog For Beginners</p>
       <table class="first">
         <tr>
           <td>Home</td>
@@ -25,46 +25,45 @@
   </div>
 
   <div>
-    <p>
-     Facebook, Apple, Twitter, Amazon, these are just a few of the many “cool looking" webpages on the internet today. But how did they get like that? The answer: HTML and CSS (and a little creativity). HTML and CSS are programming languages that developers use to create and style webpages. There are many aspects of HTML and CSS that developers tap into to create webpages, but in this blog entry I am going to dive into the best practices associated with two very important elements: Classes and Ids.
+    <p class="body">
+     Facebook, Apple, Twitter, Amazon, these are just a few of the many cool looking webpages on the internet today. But how did they get like that? The answer: HTML and CSS (and a little creativity). HTML and CSS are programming languages that developers use to create and style webpages. There are many aspects of HTML and CSS that developers tap into to create webpages, but in this blog entry I am going to dive into the best practices associated with two very important elements: Classes and Ids.</p>
 
-Lets imagine we are developers. Are you imagining? Ok now that we are officially (imaginary) developers, we want to create a webpage so that we can show everyone we know that we really know how to program. To make a website, we have to start by using HTML to make a skeleton of the elements we want our page to have. Let’s create our site with a title, a navigation bar, an image, and a few paragraphs. Each of these elements is surrounded by a unique tag that lets our webpage know how we want the element rendered or shown on screen.
+<p class="body">Lets imagine we are developers. Are you imagining? Ok now that we are officially (imaginary) developers, we want to create a webpage so that we can show everyone we know that we really know how to program. To make a website, we have to start by using HTML to make a skeleton of the elements we want our page to have. Let’s create our site with a title, a navigation bar, an image, and a few paragraphs. Each of these elements is surrounded by a unique tag that lets our webpage know how we want the element rendered or shown on screen.</p>
 
-Here is an example of the HTML tags we might use for our site: 
-<img src="HTML_skeleton.png">
-
-
-Alrighty, now we have the skeleton of our site, but we need to add the skin and makeup. We want our website to look well thought out and put together, not just a page with a bunch of things thrown on it. To “beautify” our page we need to use CSS. You see in the tag that says ‘link’ in our HTML skeleton? That link is telling our HTML to refer to another page (a CSS page we’ve made) for instructions about the style of our page. The CSS page instructs our page on where we want the image to sit, what font we want the title to be, what color we want the entire page’s background to be, and pretty much any other stylistic element you can think of. 
-
-"Ok Missy, this all sounds good, but what the heck are Classes and ID’s?” You are probably asking yourself. Well classes and ID’s are one way to tell the CSS what part of the HTML to style. By assigning a class or an id to an element, say a paragraph or an image, we can then refer to that element in our CSS document without having to call out each specific element. For example, lets say we want all of our paragraphs to be in white cursive font and 24px size. Instead of calling out each specific paragraph in our HTML file onto our CSS file and giving it a cursive font, white color, and font-size of 24px, we can assign a  class to each paragraph tag in the HTML file by labeling each of the paragraph tags class=“class name”. Now in our CSS file we can simply assign all the styles to the whole class instead of each individual element. 
-
-This is how it looks in HTML: 
-<img src="classes_html.png">
-
-This is how the corresponding CSS looks:
-<img src="classes_css.png">
+<p class="body">Here is an example of the HTML tags we might use for our site: </p>
+<p class="body"><img src="HTML_skeleton.png"></p>
 
 
-Classes can be assigned to as many elements as you like. However sometimes you want to just change one element. This is where ID’s come in handy. They are used the exact same way as classes, except they can only be used once. For example if we wanted to make only one paragraph stand out with a little background color, we could assign an ID to that paragraph by adding ID=“ID name” to that paragraph tag in the HTML. Now in our CSS we assign the style to that ID. 
+<p class="body">Alrighty, now we have the skeleton of our site, but we need to add the skin and makeup. We want our website to look well thought out and put together, not just a page with a bunch of things thrown on it. To “beautify” our page we need to use CSS. You see in the tag that says ‘link’ in our HTML skeleton? That link is telling our HTML to refer to another page (a CSS page we’ve made) for instructions about the style of our page. The CSS page instructs our page on where we want the image to sit, what font we want the title to be, what color we want the entire background to be, and pretty much any other stylistic element you can think of.</p> 
 
-Here is how that looks in HTML:
-<img src="ID_html.png">
+<p class="body">Ok Missy, this all sounds good, but what the heck are Classes and ID’s? Well classes and IDs are one way to tell the CSS what part of the HTML to style. By assigning a class or an id to an element, say a paragraph or an image, we can then refer to that element in our CSS document without having to call out each specific element. For example, lets say we want all of our paragraphs to be in white cursive font and 24px size. Instead of calling out each specific paragraph in our HTML file onto our CSS file and giving it a cursive font, white color, and font-size of 24px, we can assign a  class to each paragraph tag in the HTML file by labeling each of the paragraph tags class=“class name”. Now in our CSS file we can simply assign all the styles to the whole class instead of each individual element.</p> 
 
+<p class="body">This is how it looks in HTML: </p>
+<p class="body"><img src="classes_html.png"></p>
 
-And CSS
-<img src="ID_css.png">
-
-
-*Please note that classes are denoted with a (.) in CSS and ID’s are denoted with a (#).*
+<p class="body">This is how the corresponding CSS looks:</p>
+<p class="body"><img src="classes_css.png"></p>
 
 
+<p class="body">Classes can be assigned to as many elements as you like. However sometimes you want to just change one element. This is where IDs come in handy. They are used the exact same way as classes, except they can only be used once. For example if we wanted to make only one paragraph stand out with a little background color, we could assign an ID to that paragraph by adding ID=“ID name” to that paragraph tag in the HTML. Now in our CSS we assign the style to that ID.</p> 
 
-With the knowledge you’ve gained reading this blog entry, you now know that you should use classes for items that you will use frequently, as they can be used multiple times in one document. ID’s on the other hand are only used for one time instances.
+<p class="body">Here is how that looks in HTML: </p>
+<p class="body"><img src="ID_html.png"></p>
 
-That’s it, you are good to go. 
 
-melissawimberly signing off...
-    </p>
+<p class="body">And CSS </p>
+<p class="body"><img src="ID_css.png"></p>
+
+
+<p class="body">*Please note that classes are denoted with a (.) in CSS and IDs are denoted with a (#).*</p>
+
+
+
+<p class="body">With the knowledge you have gained reading this blog entry, you now know that you should use classes for items that you will use frequently, as they can be used multiple times in one document. IDs on the other hand are only used for one time instances.</p>
+
+<p class="body">That is it, you are good to go. </p>
+
+<p class="body">melissawimberly signing off... </p>
   </div>
 
   <div>
