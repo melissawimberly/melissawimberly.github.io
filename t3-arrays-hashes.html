@@ -9,7 +9,7 @@
 <div>
   <div>
     <h1>Melissa Wimberly</h1>
-    <p>Technical Blog - Comparing Arrays and Hashes in Ruby</p>
+    <p id="subtitle">Technical Blog - Comparing Arrays and Hashes in Ruby</p>
       <table>
         <tr>
           <td>Home</td>
@@ -24,55 +24,53 @@
   </div>
 
   <div>
-    <p class="first">Hey Guys and Gals!</p>
+    <p class="first">Hey Guys and Gals! Today we are going to be talking about Arrays and Hashes. </p>
 
-<p class="first">Today we are going to be talking about Arrays and Hashes. </p>
+<p class="bodyp">As we know, Ruby is a language full of objects. There are many ways to keep track of all of these objects, but the two most common ways are using Arrays and Hashes. </p>
 
-<p class="first">As we know, Ruby is a language full of objects. There are many ways to keep track of all of these objects, but the two most common ways are using Arrays and Hashes. </p>
+<p class="bodyp">Arrays and hashes are used to house a collection of objects. These objects are indexed in arrays and hashes and can be called upon by using a key. This is very useful when you have a long list of objects that you need to store somewhere. Instead of having to go through each object, you can just use a key to call the exact object you want. It is kind of like a remote control. There are thousands of channels, but with the right key you can turn on any channel you want! </p>
 
-<p class="first">Arrays and hashes are used to house a collection of objects. These objects are indexed in arrays and hashes and can be called upon by using a key. This is very useful when you have a long list of objects that you need to store somewhere. Instead of having to go through each object, you can just use a key to call the exact object you want. It’s kind of like a remote control. There are thousands of channels, but with the right key you can turn on any channel you want! </p>
+<p class="bodyp">Ok Missy, this is all good, but when do we use an array and when do we use a hash? </p> 
 
-<p class="first">Ok Missy, this is all good, but when do we use an array and when do we use a hash? </p> 
+<p class="bodyp">Well that is a great question, and the answer is simple. Remember that key I was talking to (the numbers you click on the remote to call the channel you want)? Well when  you are working with arrays, that key is an integer. When you are working with hashes that key can be any object. So on your television, you have to type in the integer 43 as the key to call MTV, this is like a hash. However if you are typing in the password -or key- for your Gmail account you can use letters, symbols, punctuation marks, or even integers to call your account, this is more like a hash. </p>
 
-<p class="first">Well that’s a great question, and the answer is simple. Remember that key I was talking to (the numbers you click on the remote to call the channel you want)? Well when  you are working with arrays, that key is an integer. When you are working with hashes that key can be any object. So on your television, you have to type in the integer 43 as the key to call MTV, this is like a hash. However if you are typing in the password -or key- for your Gmail account you can use letters, symbols, punctuation marks, or even integers to call your account, this is more like a hash. </p>
+<p class="bodyp">I don’t know about you guys, but I learn better by seeing examples. So here are a few simple examples to help me illustrate hashes and arrays.</p>
 
-<p class="first">I don’t know about you guys, but I learn better by seeing examples. So here are a few simple examples to help me illustrate hashes and arrays.</p>
+<p class="bodyp">Here are some arrays:</p>
 
-<p class="first">Here are some arrays:</p>
+<p class="exmp">array1 = ["Brooklyn", "Manhattan", "Jersey", "Queens"]</p>
 
-<p class="first">array1 = [/'Brooklyn/’, /‘Manhattan/’, /‘Jersey/’, /‘Queens/’]</p>
+<p class="exmp">array2 = [5, 7, 9, 17, 48]</p>
 
-<p class="first">array2 = [5, 7, 9, 17, 48]</p>
+<p class="exmp">array3 = ["Melissa", "5", "blue", 6.82]</p>
 
-<p class="first">array3 = [/‘Melissa/’, ‘5’, /‘blue/’, 6.82]</p>
+<p class="bodyp">As you can see, arrays can have handle strings, integers, and floats. now if I want to access the ‘Manhattan’ element in the first array, I would call it using the key 1. This is because when accessing elements in arrays you use positioning. The first element is indexed as 0, the second is 1, the third is 2, and so one. Let’s do it together:</p>
 
-<p class="first">As you can see, arrays can have handle strings, integers, and floats. now if I want to access the ‘Manhattan’ element in the first array, I would call it using the key 1. This is because when accessing elements in arrays you use positioning. The first element is indexed as 0, the second is 1, the third is 2, and so one. Let’s do it together:</p>
+<p class="exmp">array1 [1]</p>
 
-<p class="first">array1 [1]</p>
+<p class="bodyp">See that wasn’t so hard was it? Alrighty, now that we’ve got arrays down, lets move on to hashes. Hashes are represented as key-value pairs, as seen below:</p>
 
-<p class="first">See that wasn’t so hard was it? Alrighty, now that we’ve got arrays down, lets move on to hashes. Hashes are represented as key-value pairs, as seen below:</p>
+<p class="exmp">fave_animals = {<p class="first">
 
-<p class="first">fave_animals = {<p class="first">
+<p class="exmp">"dog" => "spot",</p>
 
-<p class="first">/‘dog/’ => /‘spot/’,</p>
+<p class="exmp">"cat" => "fluffy",</p>
 
-<p class="first">/‘cat/’ => /‘fluffy/’,</p>
+<p class="exmp">"fish" => "goldie",</p>
 
-<p class="first">/‘fish/’ => /‘goldie/’,</p>
+<p class="exmp">"turtle" => "speedy"</p>
 
-<p class="first">/’turtle/’ => /’speedy/'</p>
+<p class="exmp"> }</p>
 
-<p class="first"> }</p>
+<p class="bodyp">Instead of having to use integers to call each value, hashes allow you to simply use the given key. For example, to find out my favorite fish, I just call</p>
 
-<p class="first">Instead of having to use integers to call each value, hashes allow you to simply use the given key. For example, to find out my favorite fish, I just call</p>
-
-<p class="first">fave_animals [/‘fish/’].</p>
+<p class="exmp">fave_animals ["fish"].</p>
 
 
 
-<p class="first">So that’s it folks. Arrays and Hashes are very simple, you just have to remember where you put the key (and what it looks like)!</p>
+<p class="bodyp">So that is it folks. Arrays and Hashes are very simple, you just have to remember where you put the key (and what it looks like)!</p>
 
-<p class="first">melissawimberly signing off!</p>
+<p class="bodyp">melissawimberly signing off!</p>
   </div>
 
   <div>
