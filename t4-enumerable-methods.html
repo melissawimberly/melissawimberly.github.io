@@ -1,0 +1,71 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><!--Insert the Browsers's title here --></title>
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+<body>
+<div>
+  <div>
+    <h1 class="first">Melissa Wimberly</h1>
+    <p id="subtitle">What the heck is this .map?</p>
+      <table>
+        <tr>
+          <td>Home</td>
+          <td>Contact Me</td>
+          <td>Work</td>
+          <td>Linkedin</td>
+          <td>Twitter</td>
+          <td>Facebook</td>
+          <td>Github</td>
+        </tr>
+      </table>
+  </div>
+
+  <div>
+    <p class="bodyp">Hey Guys!</p>
+
+<p class="bodyp">The blog for today is about the Enumerable .map. But first thing first; What is an Enumerable?
+Enumerables are a set of methods that provide shortcuts for manipulating collections of data. They are used as a sort of a proxy for each. There are several of these shortcut methods, such as all?, any?,sort, inject,min, max, and the one that we are going to be discussing which is map.</p>
+
+<p class="bodyp">The map enumerable is a widely used enumerable because it modifies a collection of data, (usually that of an array or a hash), and transforms a copy of the grouped data without altering the original. It is essentially just like calling the each method on a group of data, except map does not alter the original data.</p>
+
+<p class="bodyp">Ok, that was a lot of programming jargon and general bladiblah, how about we see this map enumerable in action!</p>
+
+<p class="exmp">some_array = [5,10,15,20]</p>
+<p class="exmp">new_array = some_array.map{ |x| -x}</p>
+<p></p>
+<p class="exmp">puts some_array.join (',')  #=>  5, 10, 15, 20</p>
+<p class="exmp">puts new_array.join (',')   #=> -5, -10, -15, -20</p>
+
+<p class="bodyp">Did you see that? The map method returned a copy of the original array with all of the numbers as negative numbers, but the original array is still in tact. But hang on! Why can’t we just use .each for this? Good question. The answer is because of the inheritant properties of *.each*. Let’s look at an example of what *.each* would look like for this example:</p>
+
+<p class="exmp">some_array = [5,10,15,20]</p>
+<p class="exmp">some_array.each { |x| x= -x}</p>
+<p class="exmp">puts some_array.join (',')    #=>   5, 10, 15, 20</p>
+
+<p class="bodyp">You see, in .each iteration, the assignment operation does not actually alter each element in the iteration. Rather, the x is a pointer to the current element in the collection. Changing x to point to another object does not change the actual element in the array. It just points the *puts* statement to something else, and that pointer is irrelevant at the end of the loop. So you are left with no actual change made.</p>
+
+<p class="bodyp">There are a few quick notes that I want to point out:</p>
+
+<p class="bodyp">If you do want to modify the original array, you can use map! (this is called map with a bang). Everything else is the same, but this is a destructive method, so the original array will be changed.</p>
+
+<p class="bodyp">This .map enumerable can also be referred to as .collect.</p>
+
+<p class="bodyp">Time for a recap: </p>
+<p class="bodyp">Enumerables are a bunch of methods used as shortcuts to manipulate data. It is very similar to the .each method, except .map returna a copy of the data without affecting the original data.</p>
+
+<p class="bodyp">Alrighty, you are good to go now!  I will leave you with this quote from the creator of Ruby to help you understand the point of Enumerables,
+“Programmers often feel joy when they can concentrate on the creative side of programming, so Ruby is designed to make programmers happy.” Yukihiro Matsumoto (Matz)</p>
+
+<p class="bodyp">melissawimberly signing out...</p>
+  </div>
+
+  <div>
+    <p class="first"><!--This is where a blog would go --></p>
+  </div>
+
+</div>
+</body>
+</html>
