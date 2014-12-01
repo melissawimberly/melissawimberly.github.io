@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><!--Insert the Browsers's title here --></title>
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+<body>
+<div>
+  <div>
+    <h1>Melissa Wimberly</h1>
+    <p id="subtitle">Technical Blog - Ruby Classes</p>
+      <table>
+        <tr>
+          <td>Home</td>
+          <td>Contact Me</td>
+          <td>Work</td>
+          <td>Linkedin</td>
+          <td>Twitter</td>
+          <td>Facebook</td>
+          <td>Github</td>
+        </tr>
+      </table>
+  </div>
+
+  <div>
+    <p class="bodyp">
+As we know, Ruby is an Object Oriented language, which is a fancy way of saying everything in Ruby is an object, and we are able to manipulate and define those objects to do whatever we want them to do. Classes are used to construct objects. They are essentially the blueprint  for an object. The class defines all of the properties the object will have, as well as the methods that can be called on the object.
+Lets start out with an example. Lets create a class called Programmers. To create a class we have to define and initialize it. Take a look at the code below</p>
+
+<p class="exmp">class Programmer</p>
+  <p class="bodyp">def initialize (name, language)</p>
+    <p class="bodyp">@name = name</p>
+    <p class="bodyp">@language = language</p>
+  <p class="bodyp">end</p>
+
+<p class="bodyp">Programmer is now a class. To initialize, or make the Programmer class start, we need to pass two arguments, name and language, to the class. These two variables, name and language, are called Instance Variables. This is because they change with every instance. So every Programmer will have a different name and language. This syntax might be hard to understand at first, but do note that the instance variables are written with @ signs. This is just so that we, and Ruby, know that these variables will change depending on the input that is given. </p>
+
+<p class="bodyp">After we have specified which variables our class needs in order to begin, we can also define a few methods that our class can work with. Take a look at the following examples:</p>
+
+
+  <p class="exmp">def work
+  <p class="exmp">  puts “code, code, code, code in #{@language}”
+  <p class="exmp">end
+
+  <p class="exmp">def drink_coffee
+  <p class="exmp">  puts "More caffeine for #{@name}"
+  <p class="exmp">end
+
+  <p class="exmp">def display
+  <p class="exmp">  puts “Hi, my name is #{@name} and I use #{@language} to program”
+  <p class="exmp">end
+
+
+<p class="bodyp">These three methods can be added in our Programmer class so that they can work with our class and output certain data. </p>
+
+<p class="bodyp">To call our new class we use the syntax Class_Name.new(argument(s)). Ok lets see Programmers in action!</p>
+
+<p class="exmp">class Programmer</p>
+<p class="exmp">  CLASS VARIABLE</p>
+<p class="exmp">  def initialize (name, language)</p>
+<p class="exmp">    @name = name</p>
+<p class="exmp">    @language = language</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">  def work</p>
+<p class="exmp">    puts “code, code, code, code all day in #{@language}”</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">  def drink_coffee</p>
+<p class="exmp">    puts "More caffeine for #{@name}"</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">  def display</p>
+<p class="exmp">    puts “Hi, my name is #{@name} and I use #{@language} to program”</p>
+<p class="exmp">  end</p>
+<p class="exmp">end</p>
+
+<p class="exmp">employee = Programmers.new("Melissa", "Ruby")</p>
+<p class="exmp">employee.work</p>
+<p class="exmp">employee.drink_coffee</p>
+<p class="exmp">employee.display</p>
+
+<p class="bodyp">output:</p>
+<p class="exmp">code, code, code, code all day in Ruby</p>
+<p class="exmp">More caffeine for Melissa</p>
+<p class="exmp">Hi, my name is Melissa and I use Ruby to program</p>
+
+<p class="bodyp">Did you see that? These new methods that we just defined, work, drink_coffee, and display, are now functioning methods that we can call on any instance of the Programmer class. It’s important to understand that they methods will only work on the Programmer class, calling them outside of this class will not work.</p>
+
+<p class="bodyp">Ruby has many different kinds of variables, but the four most important to understand with classes are local variable, instance variables, class variables, and global variables. Local variables are the variables that are most common in basic programming. They are simple variables that we assign values to that can only be used locally. Instance variables are 
+Class variables can be used within any definition in the class. Above our initialized definition, we have the variable lsdkfj set to sldkf. This means that in any of these definitions, we can call the variable lsdkfj and it will always equal lsdkfj. Global variables can be used across classes. We could’ve defined lskjf, for example as a global variable. This way whether we were in the Programmer class or the Marketer class, lskfj would always be lsdkfj. </p>
+
+<p class="bodyp">Another thing we could have done is to set attributes for this class. Attributes simplify classes, because you are able to set variables in the beginning, and then come back and call them later in the class. It also shortens the code, because you no longer have to write out each definition.</p>
+
+<p class="bodyp">For example, if you give your variable the attribute of writer, you have told your code, hey you don’t need a definition to set the value of this variable, just set it anywhere in this class. Check out the code below to see this point illustrated:</p>
+
+<p class="exmp">attr_writer :variable</p>
+<p class="exmp">is the same as doing</p>
+
+<p class="exmp">def variable=(value)</p>
+<p class="exmp">  @variable = value</p>
+<p class="exmp">end</p>
+<p class="bodyp">If you write:</p>
+
+<p class="exmp">attr_reader :variable</p>
+<p class="bodyp">thats the same as doing</p>
+
+<p class="exmp">def variable</p>
+<p class="exmp">  @variable</p>
+<p class="exmp">end</p>
+<p class="bodyp">If you write:</p>
+
+<p class="exmp">attr_accessor :variable</p>
+<p class="bodyp">thats the same as doing</p>
+
+<p class="exmp">def variable=(value)</p>
+<p class="exmp">  @variable = value</p>
+<p class="exmp">end</p>
+
+<p class="exmp">def variable</p>
+<p class="exmp">  @variable</p>
+<p class="exmp">end</p>
+
+<p class="bodyp">See how many lines of code can be gotten rid of with the use of attributes!</p>
+
+<p class="bodyp">Alright the last thing I want to go over is classes within classes. Since everything in Ruby is an object, and classes are also objects, it is inevitable that we will have classes within classes. Luckily for us, classes are hereditary. The hierarchy of classes starts with the superclass. For example, because all Programmers are people, Programmer would have a superclass of Person. This means that all of the properties that Person (the superclass) has, Programmer also has.</p>
+
+<p class="bodyp">Alrighty, you should have a basic understanding of classes now.</p>
+
+<p class="bodyp">melissawimberly signing off...</p>
+</p>
+  </div>
+
+  <div>
+    <p class="first"><!--This is where a blog would go --></p>
+  </div>
+
+</div>
+</body>
+</html>
