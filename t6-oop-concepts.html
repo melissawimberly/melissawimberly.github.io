@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><!--Insert the Browsers's title here --></title>
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+<body>
+<div>
+  <div>
+    <h1>Melissa Wimberly</h1>
+    <p id="subtitle">Inheritance vs Composition</p>
+      <table>
+        <tr>
+          <td>Home</td>
+          <td>Contact Me</td>
+          <td>Work</td>
+          <td>Linkedin</td>
+          <td>Twitter</td>
+          <td>Facebook</td>
+          <td>Github</td>
+        </tr>
+      </table>
+  </div>
+
+  <div>
+    <p class="first">This week we are going to discuss Inheritance and Composition!</p>
+
+<p class="bodyp">As we all have began to notice, writing Ruby code for different real world situations usually entails creating new classes. These classes vary in function, but all include definitions which delineate what the class will do. While each class that we create will differ from another, often times these classes have methods in common. Instead of having to re-write each of the methods, it would be great if we could start out defining a class, and then let other classes use all of those defined methods, as well as any other methods that we want to create for them.</p> 
+
+<p class="bodyp">Well wouldn't you know it, Ruby has given us that functionality. With inheritance we can use one class as the “Parent” class, and let all of the child classes, that we create secondarily, inherit the methods defined in the parent class. We can still define additional methods for each of the child classes to use alongside those they have inherited.</p> 
+
+<p class="bodyp">Ok, enough talk, let's see this inheritance stuff in action.</p> 
+
+<p class="exmp"> class Parent</p> 
+<p class="exmp">  def to_inherit</p> 
+<p class="exmp">    puts "I'm the PARENT"</p> 
+<p class="exmp">  end</p> 
+<p class="exmp">end</p> 
+
+<p class="exmp">class Child < Parent</p> 
+<p class="exmp">end</p> 
+
+<p class="exmp">mom = Parent.new</p> 
+<p class="exmp">daughter = Child.new</p> 
+
+<p class="exmp">mom.to_inherit  => "I'm the PARENT"</p> 
+<p class="exmp">daughter.to_inherit  => "I'm the PARENT"</p> 
+
+
+<p class="bodyp">Did you see that, with the (<) symbol we were able transfer the methods we defined in the Parent class to the Child class. Now when we 
+call the to_inherit method (that we defined in the Parent class) on our instance of the Child class, the method works and we get an output of "I'm the PARENT”. </p>
+
+<p class="bodyp">You can also override methods in the Child class that were previously created in the Parent class. Check this out:</p>
+
+<p class="exmp">class Parent</p>
+
+<p class="exmp">  def override</p>
+<p class="exmp">    puts "PARENT is here"</p>
+<p class="exmp">  end</p>
+<p class="exmp">end</p>
+
+<p class="exmp">class Child < Parent</p>
+<p class="exmp">  def override</p>
+<p class="exmp">    puts "Move over Parent, CHILD is here now!"</p>
+<p class="exmp">  end</p>
+<p class="exmp">end</p>
+
+<p class="exmp">mom = Parent.new</p>
+<p class="exmp">daughter = Child.new</p>
+
+<p class="exmp">mom.override  => "PARENT is here"</p>
+
+<p class="exmp">daughter.override  => "Move over Parent, CHILD is here now!"</p>
+
+<p class="bodyp">You see, we changed the override method for the Child class, which altered the result that we got when calling it on our instance of the Child class, but not on the Parent class.</p>
+
+<p class="bodyp">Now as we know, there is never only one way to do something in Ruby. Thus, another way to let classes inherit from each other is with something called Composition.</p>
+ <p class="bodyp">The inheritance entails an is_a? relationship. Basically the Child class is_a Parent class. This can be useful, but when our programs start to get more complex, this is going to relate in a lot of similar coupled classes. Instead, we might try using Composition. Composition functions on a has_a? relationship. Child will have some of the functionality of Parent, but also be its on entity. Composition re-uses some shared logic from another class by creating an object of the other class and calling its methods. Let's see composition in action</p>
+
+<p class="exmp">class Other</p>
+
+<p class="exmp">  def to_inherit</p>
+<p class="exmp">    puts "I'm from the OTHER class"</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">def override</p>
+<p class="exmp">    puts "OTHER is here"</p>
+<p class="exmp">  end</p>
+<p class="exmp">end</p>
+
+<p class="exmp">class Composed</p>
+
+<p class="exmp">  def initialize()</p>
+<p class="exmp">    @other = Other.new</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">  def to_inherit</p>
+<p class="exmp">    @other.to_inherit</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">  def override</p>
+<p class="exmp">    puts "Move over Other, CHILD is here now!"</p>
+<p class="exmp">  end</p>
+
+<p class="exmp">end</p>
+
+<p class="exmp">new = Composed.new</p>
+
+<p class="exmp">new.to_inherit  => "I'm from the OTHER class"</p>
+<p class="exmp">new.override  => "Move over Other, CHILD is here now!"</p>
+
+
+<p class="bodyp">Initializing the Composed class by creating a new instance of the Other class, allows us to use the methods created in the Other class within the Compose class.  </p>
+
+<p class="bodyp">There you have it, you are now equipped with two ways to create classes by re-using methods from previously defined classes. Now go off and practice using both!</p>
+
+<p class="bodyp">melissawimberly signing off...</p>
+  </div>
+
+  <div>
+    <p class="first"><!--This is where a blog would go --></p>
+  </div>
+
+</div>
+</body>
+</html>
