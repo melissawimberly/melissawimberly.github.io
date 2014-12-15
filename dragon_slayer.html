@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dragon Slayer Game</title>
+		<link rel="stylesheet" type="text/css" href="dragon_slayer.css">
+	</head>
+	<body>
+		<h1>Slay The Dragon...</h1>
+		<p class="description">Welome to Dragon Slayer! You have just embarked upon a very dangerous journey! Your mission, should you choose to accept, is simple, slay the dragon!</p>
+ 		<p class="description">But you are just one warrior, how will you preform such a task? Many before you have tried and failed. There is only one way to suceed. You must strike the dragon three consecutive times in order to slay him for good. Are you up to the challenge?</p>
+
+ 		<div id="gameboard">
+ 			<div id="vikingIcon"></div>
+ 			<div id="dragonIcon"></div>
+ 		</div>
+
+ 		<style>
+ 		body{
+ 			margin: 10px;
+            padding: 0;
+            /*font-family: cursive, serif;*/
+            background-color: ;
+            font: bold;	
+ 		}
+
+ 		h1{
+ 			text-align: center;
+ 			font-family: cursive; serif;
+ 			font-size: 32px;
+ 			background-color: black;
+ 			color: red;
+ 		}
+
+ 		.description{
+ 			font-size: 28px;
+ 			color: red;
+ 			text-align: center;
+ 			margin: 100px, 20px;
+ 		}
+
+ 		#gameboard{
+ 			width: 800px;
+ 			height: 500px;
+ 			border: 5px solid black;
+ 			background-image: url("http://i59.tinypic.com/6gdber.jpg");
+ 			position:relative;
+ 			margin-left: 240px;
+ 			z-index: -1;
+ 		}
+
+ 		#vikingIcon{
+ 			position: absolute;
+ 			width: 200px;
+ 			height: 200px;
+ 			background-image: url("http://i59.tinypic.com/15mmvet.jpg");
+ 			left: 0;
+ 			bottom: 0;
+
+ 			z-index: 1;
+ 		}
+
+		#dragonIcon{
+			position: absolute;
+ 			width: 270px;
+ 			height: 200px;
+ 			background-image: url("http://i60.tinypic.com/2d7u8ls.jpg");
+ 			left: 500px;
+ 			/*top: 300px;  */
+ 			bottom: 0px;
+		}
+
+ 		</style>
+
+ 		// <script>
+ 		
+		var gameboard = document.getElementById("gameboard");
+		var vikingIcon = document.getElementById("vikingIcon");
+		var dragonIcon = document.getElementById("dragonIcon");
+
+ 		var viking = {
+ 			name: "Ragnar",
+ 			type: "viking",
+ 			skill_level: "beginner" 
+ 		}
+
+ 		var dragon = {
+ 			name: "Fluffy",
+ 		 type: "dragon",
+ 		 skill_level: "scary"
+ 		}
+
+ 		var hitRound1 = Math.floor(Math.random()*2)
+ 		var hitRound2 = Math.floor(Math.random()*2.5)
+ 		var hitRound3 = Math.floor(Math.random()*2.75)
+
+      	var positionLeft = 0;
+      	var positionTop = 0;
+
+
+ 		confirm("Are you ready to face your first dragon?")
+ 		if(true){
+ 			var slaying = true
+ 		}
+
+ 		while(slaying){
+ 			if(hitRound1){
+ 				console.log("Congrats! You hit the dragon!");
+ 				alert("Well done young warrior! Strike again...if you dare!"); 
+ 				function move(i) {
+            		positionLeft += 100;
+            		vikingIcon.style.left = positionLeft + "px";
+          		}
+
+ 				if(hitRound2){
+ 					console.log("Great hit! Keep it up, you just need one more!");
+ 					alert("Young warrior you have impressed me! Strike again for victory...");
+
+ 					if(hitRound3){
+ 						alert("YOU'VE DONE IT!!! THE DRAGON HAS BEEN SLAYED!!! CONGRATULATIONS");
+ 					}
+ 					else{
+ 						alert("So close, yet so far. You are not ready to face a Dragon yet young warrior...");
+ 					}
+ 				}	
+
+ 				else{
+ 					alert("You were strong, and now you are weak, you must practice more young warrior.")
+ 				}	
+ 			}
+ 			else{
+ 				alert("Sorry Charlie...This dragon ate you in one bite!");
+ 			}
+
+ 			slaying = false
+ 		}
+ 		</script>
+
+
+	</body>
+
+</html>

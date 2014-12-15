@@ -55,6 +55,13 @@ margin-right: 10px;
 	margin-left: 30px;
 }
 
+.codexmp{
+  font: italic;
+  margin-left: 45px;
+  margin-right: 45px;
+  background-color: grey;
+}
+
 .body{
   padding-left: 15px;
   padding-right: 10px;
