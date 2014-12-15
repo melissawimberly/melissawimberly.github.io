@@ -5,29 +5,38 @@
 		<link rel="stylesheet" type="text/css" href="dragon_slayer.css">
 	</head>
 	<body>
+		<!-- <audio src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" autoplay=true></audio> -->
+
 		<h1>Slay The Dragon...</h1>
-		<p class="description">Welome to Dragon Slayer! You have just embarked upon a very dangerous journey! Your mission, should you choose to accept, is simple, slay the dragon!</p>
+		<p class="description">Welome to Slay The Dragon! You have just embarked upon a very dangerous journey! Your mission, should you choose to accept, is simple, slay the dragon!</p>
  		<p class="description">But you are just one warrior, how will you preform such a task? Many before you have tried and failed. There is only one way to suceed. You must strike the dragon three consecutive times in order to slay him for good. Are you up to the challenge?</p>
 
  		<div id="gameboard">
- 			<div id="vikingIcon"></div>
- 			<div id="dragonIcon"></div>
+ 			<div id="vikingIcon">
+ 				<img src="http://i59.tinypic.com/15mmvet.jpg">
+ 			</div>
+ 			<div id="dragonIcon">
+ 				<img src="http://i60.tinypic.com/2d7u8ls.jpg">
+ 			</div>
  		</div>
+
+ 		<footer>
+ 			<h2 class="footertext">Thanks for playing Slay The Dragon</h2>
+ 		</footer>
 
  		<style>
  		body{
  			margin: 10px;
             padding: 0;
-            /*font-family: cursive, serif;*/
-            background-color: ;
+            background-color: black ;
             font: bold;	
  		}
 
  		h1{
  			text-align: center;
  			font-family: cursive; serif;
- 			font-size: 32px;
- 			background-color: black;
+ 			font-size: 42px;
+ 			font: bold;
  			color: red;
  		}
 
@@ -52,10 +61,10 @@
  			position: absolute;
  			width: 200px;
  			height: 200px;
- 			background-image: url("http://i59.tinypic.com/15mmvet.jpg");
+ 			/*background-image: url("http://i59.tinypic.com/15mmvet.jpg");*/
  			left: 0;
- 			bottom: 0;
-
+ 			top: 0px;
+ 			bottom-margin: 0px;
  			z-index: 1;
  		}
 
@@ -63,19 +72,42 @@
 			position: absolute;
  			width: 270px;
  			height: 200px;
- 			background-image: url("http://i60.tinypic.com/2d7u8ls.jpg");
+ 			/*background-image: url("http://i60.tinypic.com/2d7u8ls.jpg");*/
  			left: 500px;
  			/*top: 300px;  */
  			bottom: 0px;
 		}
 
+		.footertext{
+			text-align: center;
+ 			font-family: cursive; serif;
+ 			font-size: 22px;
+ 			font: italic;
+ 			color: red;
+		}
+
  		</style>
 
- 		// <script>
+ 		 <script>
  		
 		var gameboard = document.getElementById("gameboard");
 		var vikingIcon = document.getElementById("vikingIcon");
 		var dragonIcon = document.getElementById("dragonIcon");
+
+		// gameboard.addEventListener('keydown', doKeyDown, true);
+
+		// var x = 100;
+		// var y = 100;
+
+		// function doKeyDown(e){
+		// 	if(e.keyCode == 40){
+		// 		clear("gameboard");
+		// 		y = y + 100;
+		// 		// vikingIcon(x, y, 50, 30);
+		// 		vikingIcon.style.top = y + "px";
+		// 	}
+		// }
+		
 
  		var viking = {
  			name: "Ragnar",
@@ -89,27 +121,57 @@
  		 skill_level: "scary"
  		}
 
- 		var hitRound1 = Math.floor(Math.random()*2)
- 		var hitRound2 = Math.floor(Math.random()*2.5)
- 		var hitRound3 = Math.floor(Math.random()*2.75)
-
-      	var positionLeft = 0;
-      	var positionTop = 0;
-
-
- 		confirm("Are you ready to face your first dragon?")
+		confirm("Are you ready to face your first dragon? Use your arrow keys to approach the dragon")
  		if(true){
  			var slaying = true
  		}
+
+      	var moveRight = 0;
+      	var moveDown = 0;
+
+      	function move() {
+        if(e.keyCode == 39){ //right arrow
+          if(moveRight < 300){
+            moveRight += 100;
+            orpheusIcon.style.left = moveRight + "px";
+          }
+        } 
+
+        if(e.keyCode == 37){ //left arrow
+            moveRight -= 100;
+            if(moveRight < 0){
+              moveRight -= 100;
+            }
+            vikingIcon.style.left = moveRight + "px";
+        }
+        if(e.keyCode == 38){ //up arrow
+            moveDown -= 100;
+            if(moveDown < 0){
+              moveDown += 100;
+            }
+            vikingIcon.style.top = moveDown + "px";
+        }
+      if(e.keyCode == 40){ //down arrow
+          if(moveDown < 300){
+            moveDown += 100;
+            vikingIcon.style.top = moveDown + "px";
+            }
+        }
+        // isVikingAtDragon();
+      }
+      document.onkeydown = move;
+
+
+ 		var hitRound1 = Math.floor(Math.random()*2)
+ 		var hitRound2 = Math.floor(Math.random()*2.5)
+ 		var hitRound3 = Math.floor(Math.random()*2.75)
+ 		
 
  		while(slaying){
  			if(hitRound1){
  				console.log("Congrats! You hit the dragon!");
  				alert("Well done young warrior! Strike again...if you dare!"); 
- 				function move(i) {
-            		positionLeft += 100;
-            		vikingIcon.style.left = positionLeft + "px";
-          		}
+ 				// move;
 
  				if(hitRound2){
  					console.log("Great hit! Keep it up, you just need one more!");
@@ -118,6 +180,7 @@
  					if(hitRound3){
  						alert("YOU'VE DONE IT!!! THE DRAGON HAS BEEN SLAYED!!! CONGRATULATIONS");
  					}
+
  					else{
  						alert("So close, yet so far. You are not ready to face a Dragon yet young warrior...");
  					}
