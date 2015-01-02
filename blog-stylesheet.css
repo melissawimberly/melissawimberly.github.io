@@ -32,13 +32,14 @@ font-size: 20px;
 
 table{
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 20px;
   margin: auto;
 }
 td{
   border:2px solid black;
   padding: 10px;
   background-color: teal;
+  font-size: 25px;
 }
 
 img{
@@ -65,4 +66,11 @@ margin-right: 10px;
 .body{
   padding-left: 15px;
   padding-right: 10px;
+}
+
+#links{
+ text-align: center;
+ font-size: 25px;
+ color: purple; 
+ text-decoration: none;
 }

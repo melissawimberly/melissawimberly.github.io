@@ -1,0 +1,24 @@
+#links{
+ text-align: center;
+ font-size: 25px;
+ color: purple; 
+ text-decoration: none;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 20px;
+  margin: auto;
+}
+td{
+  border:2px solid black;
+  padding: 10px;
+  background-color: teal;
+  font-size: 25px;
+}
+
+h1{
+border: 1px solid black;
+background-color: teal; 
+text-align: center;
+}
