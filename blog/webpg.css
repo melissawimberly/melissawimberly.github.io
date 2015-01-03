@@ -1,24 +1,4 @@
 
-.social_buttons {
-  margin-left: 50px;
-  float: left;
-  margin-top: 5px;
-}
-
-.social_buttons a img {
-  height: 17.5px;
-}
-
-.social_buttons a img:hover {
-  opacity: .75;
-}
-
-#github_btn, #linkedin_btn, #twitter_btn {
-  position: relative;
-  display: inline;
-  padding-right: 10px;
-}
-
 
 
 
@@ -27,10 +7,17 @@ body{
 
 }
 
-.nav_bar{
+h1{
+	font-family:'Josefin Sans', sans-serif;
+}
+
+#nav_bar{
 	border: 5px solid black;
 	text-align: right;
 	font-family:'Josefin Sans', sans-serif;
+}
+.btns{
+	font-family:'Josefin Sans', sans-serif; 
 }
 
 #first_quad{
@@ -44,7 +31,11 @@ footer{
 	background-color: grey;
 }
 
-footer .social_buttons{
-	size:10px;
-
+#github_btn, #linkedin_btn, #twitter_btn {
+  position: relative;
+  display: inline;
+  padding-right: 10px;
+  height: 10px;
+  width: 10px;
 }
+
