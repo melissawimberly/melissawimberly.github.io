@@ -1,4 +1,6 @@
 
+
+
 #heading_bar {
   height: 100px;
   width: 100%;
@@ -11,10 +13,19 @@
   padding-bottom: 15px;
 }
 
+#name h1 a {
+  color: white;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  padding: 13px;
+  text-decoration: none;
+  border: 5px solid white;
+}
 
 
 body{
-
+background-color: grey;
 }
 
 h1{
