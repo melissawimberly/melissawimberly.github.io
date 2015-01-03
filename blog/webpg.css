@@ -1,0 +1,19 @@
+
+
+body{
+
+}
+
+#nav_bar{
+	border: 5px solid black;
+}
+
+#first_quad{
+	background: url(../blog/images/paris.jpg); 
+}
+
+
+footer{
+	border: 2px solid black;
+	background-color: grey;
+}
