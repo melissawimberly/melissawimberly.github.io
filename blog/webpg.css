@@ -13,7 +13,7 @@
   opacity: .75;
 }
 
-#github {
+#github_btn, #linkedin_btn, #twitter_btn {
   position: relative;
   display: inline;
   padding-right: 10px;
