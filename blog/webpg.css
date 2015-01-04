@@ -1,7 +1,7 @@
 
 
 #nav_bar{
-	border: 5px solid white;
+	border: 5px solid black;
 	text-align: right;
 	font-family:'Josefin Sans', sans-serif;
 	text-decoration: none;
@@ -67,6 +67,6 @@ footer{
   padding-right: 10px;
   height: 40px;
   width: 40px;
-  right: 90px;
+
 }
 
