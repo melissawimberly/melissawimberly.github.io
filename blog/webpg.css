@@ -50,8 +50,8 @@ h1{
 }
 
 #first_quad{
-	background: url(../blog/images/paris.jpg);
-
+	background: url(../blog/images/paris.jpg); /*change to the a beack pic*/
+	height: 100%;
 }
 
 
