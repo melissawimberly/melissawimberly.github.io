@@ -1,4 +1,8 @@
 
+body{
+background-color: grey;
+}
+
 
 #nav_bar{
 	border: 5px solid black;
@@ -19,6 +23,7 @@
   padding-bottom: 15px;
 }
 
+
 #name h1 a {
   color: white;
   text-align: center;
@@ -30,9 +35,6 @@
 }
 
 
-body{
-background-color: grey;
-}
 
 h1{
 	font-family:'Josefin Sans', sans-serif;
@@ -48,7 +50,7 @@ h1{
 	padding: 20px;
 	text-decoration: none;
 	background-color: white;
-
+	display: inline;
 
 }
 
@@ -74,3 +76,7 @@ footer{
 
 }
 
+
+.btns:hover{
+	color: plum;
+}
