@@ -13,11 +13,11 @@
   width: 100%;
   text-align: center;
   background: url(../images/paris.jpg);
-/*  background-color: blue;
-*/  background-size: cover;
+  background-size: cover;
   background-position: 50% 50%;
   padding-top: 120px;
   padding-bottom: 15px;
+  text-align: right;
 }
 
 #name h1 a {
@@ -45,7 +45,7 @@ h1{
 	font-size: 25px; 
 	text-align: right;
 	padding: 20px;
-	
+
 }
 
 #first_quad{
