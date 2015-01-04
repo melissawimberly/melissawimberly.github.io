@@ -14,7 +14,7 @@
   text-align: center;
   background: url(../images/paris.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  /*background-position: 50% 50%;*/
   padding-top: 120px;
   padding-bottom: 15px;
 }
@@ -36,6 +36,8 @@ background-color: grey;
 
 h1{
 	font-family:'Josefin Sans', sans-serif;
+	font-size: 30px;
+	color: transparent;
 }
 
 
@@ -45,13 +47,15 @@ h1{
 	text-align: right;
 	padding: 20px;
 	text-decoration: none;
+	background-color: white;
 
 
 }
 
 #first_quad{
-	background: url(../blog/images/paris.jpg); /*change to the a beack pic*/
+	/*background: url(../blog/images/paris.jpg); /*change to the a beack pic*/*/
 	height: 100%;
+	width: 100%;
 }
 
 
