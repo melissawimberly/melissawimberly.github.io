@@ -66,12 +66,17 @@ a, a:visited{
 }
 
 #sections #about_me{
+
 }
 #sections #about_me h1{
-text-align: center;
-}
-#sections #about_me h1, #sections #about_me p{
+	text-align: center;
 	font-size: 20px;
+
+}
+#sections #about_me p{
+	text-align: center;	
+	font-size: 20px;
+
 }
 #sections #about_me img{
 	-moz-border-radius: 8px;
@@ -81,6 +86,9 @@ text-align: center;
 	box-shadow: 0 4px 8px 0 black;
 	float: left;
 	margin-right: 10px;
+}
+#sections #about_me #about_space{
+	height: 20px;
 }
 
 #sections #contact_me{
