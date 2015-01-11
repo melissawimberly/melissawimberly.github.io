@@ -1,0 +1,106 @@
+
+body{
+	font-family:'Josefin Sans', sans-serif;
+	/*background-color: #f6fbfc;*/
+	background-color: #FEFEF2;
+	margin-bottom: 25px;
+}
+a, a:visited{
+	text-decoration: none;
+	color: #333;
+}
+
+
+#nav_bar{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    z-index: 100;
+}
+#nav_bar td#spacer {
+	width:50%;
+	text-align: left;
+	font-size: 35px;
+	padding-left: 125px;	
+	padding-top: 10px;
+/*	font-family: cursive; */
+}
+#nav_bar td {
+	padding: 5px;
+	text-align:center;
+}
+#nav_bar a {
+	font-size: 25px;
+	font-weight: bold;
+	color: #754C78;
+}
+#nav_bar a:hover {
+	color: plum;
+}
+
+/*-----------------------------------------------------------------------*/
+#sections {
+	width: 100%;
+}
+#sections #intro {
+	background: url(../images/paris.jpg) no-repeat center center;
+	background-size: 100%;
+	font-size: 60px;
+	height: 500px;
+}
+#sections #intro p{
+	position: relative;
+	z-index: 1;
+	top: 320px;
+	left:20px;
+}
+#sections li {
+	margin: 50px 100px;
+}
+#sections li:first-child{
+	margin-top: 0;
+}
+
+#sections #about_me{
+}
+#sections #about_me h1{
+text-align: center;
+}
+#sections #about_me h1, #sections #about_me p{
+	font-size: 20px;
+}
+#sections #about_me img{
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 4px 8px 0 black;
+	box-shadow: 0 4px 8px 0 black;
+	float: left;
+	margin-right: 10px;
+}
+
+#sections #contact_me{
+}
+#sections #contact_me p{ 
+	text-align: center;
+	font-size: 20px;
+}
+/*-----------------------------------------------------------------------*/
+
+
+#footer{
+	text-align: center;
+}
+#footer img {
+	height: 50px;
+}
+
+#byline {
+	width: 100%;
+	text-align: center;
+}
+
