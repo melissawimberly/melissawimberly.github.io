@@ -54,6 +54,12 @@ a, a:visited{
 #directory p{
 
 }
+.directory_list{
+}
+
+#spacer{
+	height: 50px; 
+}
 /*
 #links{
  text-align: center;
