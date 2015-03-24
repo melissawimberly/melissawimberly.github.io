@@ -1,0 +1,193 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #1B2025;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+.navContent{
+
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  float: right;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  font-family: "Muli", Lato, sans-serif;
+}
+#navTitle {
+  font-family: "Helvetica Neue", Lato, sans-serif;
+  text-transform: lowercase;
+  z-index: 100;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+#navTitle a {
+text-decoration: none;
+}
+#navName {
+  position: fixed;
+  float: left;
+  display: inline-block;
+  font-family: "Muli";
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: center;
+  padding: 5px 60px;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+#nature, #typewriter, #tea, .blogPost {
+  width: 100%;
+}
+.natureText{
+  position: absolute;
+  width: 100%;
+  font-family: 'Crete Round', Alegreya, serif;
+  color: #FFF;
+  font-size:60px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px grey;  
+  text-transform: lowercase;
+  font-weight:bold;
+  margin-top: -29%;
+  margin-left: 12%;
+  margin-bottom: 0;
+  z-index: 1;
+}
+#welcomeWrapper {
+  margin-bottom: -3px;
+}
+#introWrapper {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background-color: #61454F;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+}
+#profile {
+  position: relative;
+  display: block;
+  border-radius: 150px;
+  height: 285px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em;
+  top:1.8em;
+}
+#introHeader {
+  position: relative;
+  font-family: 'Crete Round', Alegreya, serif;
+  color: #FFF;
+  text-shadow: 2px 2px 2px grey;  
+  font-size: 4em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: -60px;
+  padding-top: 1.3em;
+ 
+}
+#introText {
+  position: relative;
+  padding: 15px;
+  color: #64B9A2;
+  font-family: "Alegreya", Crete Round, serif;
+  font-size: 26px;
+  text-align: center;
+}
+#contact {
+  text-align: center;
+  padding: 2em;
+}
+.contactBtn{
+  position: relative;
+  display: inline;
+  width: 5px;
+  height: 5px;
+}
+.contactBtn a {
+ text-decoration: none;
+}
+#projectsWrapper {
+  margin-top: 3px;
+}
+.projectsText {
+  position: absolute;
+  font-family: 'Crete Round', Alegreya, serif;
+  font-size: 90px;
+  width: 100%;
+  font-weight: 700;
+  color: #FFF;
+  text-shadow: 2px 2px 2px grey;    
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  padding-top: 1.67em;
+}
+.blogText {
+  position: absolute;
+  font-family: 'Crete Round', Alegreya, serif;
+  font-size: 90px;
+  width: 100%;
+  font-weight: 700;
+  color: #FFF;
+  text-shadow: 3px 3px 3px grey;  
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  padding-top: .76em;
+}
+#copyright {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #151B22;
+  margin-top: -5px;
+}
+#copyright h1 {
+  color: #FFF;
+  vertical-align: center;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 20px 60px;
+  font-weight: 100;
+  font-family: "Helvetica Neue", Lato, sans-serif;
+  font-size: 12px;
+}
+.blogPostText{
+  position: absolute;
+  width: 100%;
+  font-family: 'Crete Round', Alegreya, serif;
+  color: #FFF;
+  font-size:60px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px grey;  
+  text-transform: lowercase;
+  font-weight:bold;
+  margin-top: -29%;
+  margin-left: 12%;
+  margin-bottom: 0;
+  z-index: 1;
+}
+a:link {
+    color: #FFF;
+}
+a:visited {
+    color: #FFF;
+}
+a:hover {
+    color: #FFF;
+}
+a:active {
+    color: #c0c0c0;
+}
