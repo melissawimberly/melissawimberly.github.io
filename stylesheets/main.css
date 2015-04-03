@@ -21,9 +21,13 @@ nav ul {
 nav li {
   display: inline;
   float: right;
-  padding: 20px 50px;
+  /*padding: 20px 50px;*/
+  padding: 1em;
   text-transform: uppercase;
   font-family: "Muli", Lato, sans-serif;
+}
+a{
+  text-decoration: none;
 }
 #navTitle {
   font-family: "Helvetica Neue", Lato, sans-serif;
@@ -74,14 +78,14 @@ text-decoration: none;
   display: block;
   width: 100%;
   text-decoration: none;
-  background-color: #61454F;
+  /*background-color: #61454F;*/
   padding-bottom: 5px;
   margin-bottom: 3px;
 }
 #profile {
   position: relative;
   display: block;
-  border-radius: 150px;
+  border-radius: 100%;
   height: 285px;
   margin-right: auto;
   margin-left: auto;
@@ -92,7 +96,7 @@ text-decoration: none;
   position: relative;
   font-family: 'Crete Round', Alegreya, serif;
   color: #FFF;
-  text-shadow: 2px 2px 2px grey;  
+  text-shadow: 5px 5px 5px rgb(100, 185, 162);
   font-size: 4em;
   margin-right: auto;
   margin-left: auto;
@@ -100,7 +104,8 @@ text-decoration: none;
   text-align: center;
   margin-top: -60px;
   padding-top: 1.3em;
- 
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: rgb(100, 185, 162);
 }
 #introText {
   position: relative;
@@ -124,33 +129,47 @@ text-decoration: none;
  text-decoration: none;
 }
 #projectsWrapper {
-  margin-top: 3px;
+  /*margin-top: 3px;*/
+  margin-bottom: -3px;
+
 }
 .projectsText {
-  position: absolute;
+  position: relative;
+  top: 2.8em; 
   font-family: 'Crete Round', Alegreya, serif;
   font-size: 90px;
-  width: 100%;
+  /*width: 100%;*/
   font-weight: 700;
   color: #FFF;
   text-shadow: 2px 2px 2px grey;    
   text-align: center;
   text-transform: lowercase;
   letter-spacing: 2px;
-  padding-top: 1.67em;
+  text-decoration: none;
+  /*padding-top: 1.67em;*/
+  margin: 0;
 }
 .blogText {
-  position: absolute;
+  position: relative;
+  top: 2.4em;
   font-family: 'Crete Round', Alegreya, serif;
   font-size: 90px;
-  width: 100%;
+  /*width: 100%;*/
   font-weight: 700;
   color: #FFF;
   text-shadow: 3px 3px 3px grey;  
   text-align: center;
   text-transform: lowercase;
   letter-spacing: 2px;
-  padding-top: .76em;
+  text-decoration: none; 
+  /*padding-top: .76em;*/
+  margin: 0;
+}
+#blogsWrapper{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3px;
+
 }
 #copyright {
   position: absolute;
@@ -195,4 +214,7 @@ a:hover {
 }
 a:active {
     color: #c0c0c0;
+}
+#blogtext{
+  top: 40px;
 }
