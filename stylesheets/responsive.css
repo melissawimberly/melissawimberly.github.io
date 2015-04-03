@@ -1,0 +1,78 @@
+/********************/
+/*   Huge screens   */
+/********************/
+@media only screen and (max-width: 1440px) {
+
+}
+
+
+/*****************************/
+/*   normal desktop screen   */
+/*****************************/
+@media only screen and (max-width: 1300px) {
+    
+}
+
+
+
+/************************/
+/*   ipad and Tablets   */
+/************************/
+@media only screen and (max-width: 1020px) {
+    
+}
+
+
+/*************************/
+/*   iphone breakpoint   */
+/*************************/
+@media only screen and (max-width: 640px) {
+   
+}
+
+
+/*********************/
+/*   Small Devices   */
+/*********************/
+@media only screen and (max-width: 570px) {
+    .natureText{
+      font-size: 1.4em;
+      color: #fff;
+    }
+    #navName{
+      left: -50px;
+      top: -8px;
+      font-size: 0.65em;
+    }
+  #nature{
+      margin-top: 19%;
+  }
+
+    #introWrapper{
+        margin-bottom: -11%;
+    }
+    #projectsWrapper{
+      margin-bottom: -13%;
+    }
+    #navTitle{
+
+    }
+
+    nav li {
+      display: inline;
+      float: right;
+      padding: .4em;
+      text-transform: uppercase;
+      font-family: "Muli", Lato, sans-serif;
+      font-size: .85em;
+    }
+    #introHeader {
+      font-size: 3em;
+    }
+    .projectsText {
+      font-size: 37px;
+    }
+    .blogText {
+      font-size: 37px;
+    }
+}
