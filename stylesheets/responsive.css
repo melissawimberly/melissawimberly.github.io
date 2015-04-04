@@ -39,11 +39,11 @@
       font-size: 1.4em;
       color: #fff;
     }
-    #navName{
+    #navName {
       left: -50px;
-      top: -8px;
-      font-size: 0.65em;
-    }
+      top: 8px;
+      font-size: 0.5em;
+}
   #nature{
       margin-top: 19%;
   }
@@ -52,10 +52,10 @@
         margin-bottom: -11%;
     }
     #projectsWrapper{
-      margin-bottom: -13%;
+      margin-bottom: -11%;
     }
     #navTitle{
-
+      display: none;
     }
 
     nav li {
@@ -75,4 +75,5 @@
     .blogText {
       font-size: 37px;
     }
+
 }
