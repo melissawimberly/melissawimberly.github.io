@@ -18,15 +18,23 @@
 /************************/
 /*   ipad and Tablets   */
 /************************/
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #navTitle{
     display: none;
   }
-  
+  #introWrapper {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    /* background-color: #61454F; */
+    padding-bottom: 5px;
+    margin-bottom: -8%;
+  }
   #projectsWrapper {
     /* margin-top: 3px; */
-    margin-bottom: -8.5%;
+    margin-bottom: -10.5%;
   }
+
 }
 
 
