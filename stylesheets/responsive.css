@@ -22,6 +22,11 @@
   #navTitle{
     display: none;
   }
+  
+  #projectsWrapper {
+    /* margin-top: 3px; */
+    margin-bottom: -8.5%;
+  }
 }
 
 
