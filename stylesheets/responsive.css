@@ -19,7 +19,9 @@
 /*   ipad and Tablets   */
 /************************/
 @media only screen and (max-width: 1020px) {
-    
+  #navTitle{
+    display: none;
+  }
 }
 
 
